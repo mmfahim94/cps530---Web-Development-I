@@ -1,0 +1,5 @@
+Introduction to PHP and ASP.
+
+A website that keeps track of time a user visits the webpage (using PHP session): http://scs.ryerson.ca/~mmfahim/lab5/part1.php
+
+A basic website using ASP cookies, keeps the record of a user's last visit: http://webdev.scs.ryerson.ca:8080/mmfahim/part2.asp
