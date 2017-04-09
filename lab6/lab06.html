@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="style.css">
+<TITLE>Lab 06, Mahmudulla Fahim</TITLE>
+
+<script>
+function validateForm() {
+	if (document.lab6.name.value == "")
+	{
+		alert("Please enter your name");
+		document.lab6.name.focus();
+		return false;
+	}
+	
+	if (!document.lab6.name.value.match(/^[A-Za-z\s]+$/))
+	{
+		alert("Name must be alphabet characters only");
+		document.lab6.name.focus();
+		return false;	
+	}
+	
+	if (document.lab6.address.value == "")
+	{
+		alert("Please enter your address");
+		document.lab6.address.focus();
+		return false;
+	}
+	
+	if (document.lab6.phoneno.value == "")
+	{
+		alert("Please enter your phone number");
+		document.lab6.phoneno.focus();
+		return false;
+	}
+	
+	if (!document.lab6.phoneno.value.match(/^[0-9]{3}?[-]{1}?([0-9]{3})[-]{1}?([0-9]{4})$/)) 
+	{
+		alert("Please enter a valid phone number");
+		document.lab6.phoneno.focus();
+		return false;
+	}
+	
+	return true;
+}
+</script>
+</head>
+<body>
+<h1> Please fill out the form below </h1>
+<div>
+<form name = "lab6" action= "http://www2.scs.ryerson.ca/~mmfahim/cgi-bin/lab6.rb" onsubmit="return validateForm()" method="post">
+Name: <br><input type="text" name="name"> <br> <br>
+Address: <br><input type="text" name="address"><br><br>
+Phone Number (i.e 416-555-5555): <br><input type="text" name="phoneno"> <br><br>
+<input type="submit" value="Submit">
+</form>
+</div>
+
+</body>
+</html>

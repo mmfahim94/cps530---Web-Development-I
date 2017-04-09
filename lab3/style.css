@@ -1,0 +1,46 @@
+.menu{
+	style="font-family: Verdana,Arial,Helvetica,Sans Serif;
+	font-size:11px;
+	color:#003366;
+	background-color:#ddeeff; 
+	font-weight:plain; 
+	text-align:center;"
+}
+
+.lab3{
+	background: url(background.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	font-family:verdana,arial,helvetica;
+	color:#336699;
+	font-size:11pt;	
+}
+
+h1.lab3{
+	color: #C0392B;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+	font-size:30px;
+}
+
+
+p.info{
+	color: #C0392B;
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+ol {
+    padding: 20px;
+}
+
+ul {
+    padding: 20px;
+	list-style-type: square;
+}
+
+
